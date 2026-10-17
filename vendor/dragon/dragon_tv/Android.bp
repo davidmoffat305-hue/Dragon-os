@@ -1,0 +1,11 @@
+android_app_import {
+    name: "DragonLauncher",
+    apk: "prebuilt/DragonLauncher.apk",
+    privileged: true,
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    // VERIFY: module names of the stock launchers on your branch.
+    overrides: ["TvLauncher", "LeanbackLauncher", "Launcher3QuickStep", "Launcher3"],
+}
